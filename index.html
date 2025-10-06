@@ -15,9 +15,11 @@
   </head>
   <body>
     <div class="container-pai">
-      <header class="cabecalho"></header>
-      <!-- Conteudo alunos -->
+      <header class="cabecalho">
+        <p class="titulo-cabecalho">Transforme Texto</p>
+      </header>
 
+      <!-- Conteudo alunos -->
       <input
         type="text"
         name="text"
@@ -29,11 +31,15 @@
       />
 
       <div class="container-button">
-        <button>MAIÚSCULAS</button>
-        <button>minúscula</button>
+        <button type="button" class="btn" id="btnMaiuscula">MAIÚSCULA</button>
+        <button type="button" class="btn" id="btnMinuscula">minúscula</button>
       </div>
 
       <div name="result" id="result" class="result">Resultado:</div>
     </div>
+
+    <footer class="footer">
+      <p class="titulo-footer">© 2025 Nicolly</p>
+    </footer>
   </body>
 </html>
