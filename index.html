@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -16,17 +16,16 @@
   <body>
     <div class="container-pai">
       <header class="cabecalho">
-        <p class="titulo-cabecalho">Transforme Texto</p>
+        <img src="./icons/Logo_original.jpg" alt="logo" class="logo" />
+        <h1><strong>TRANSFORME textos</strong></h1>
       </header>
 
-      <!-- Conteudo alunos -->
       <input
         type="text"
-        name="text"
         id="input-text"
         class="input-text"
+        placeholder="Digite o texto aqui"
         maxlength="500"
-        placeholder="digite seu texto aqui"
         required
       />
 
@@ -35,11 +34,20 @@
         <button type="button" class="btn" id="btnMinuscula">minúscula</button>
       </div>
 
-      <div name="result" id="result" class="result">Resultado:</div>
-    </div>
+      <textarea
+        name="result"
+        id="result"
+        class="result"
+        placeholder="Resultado"
+        readonly
+      ></textarea>
 
-    <footer class="footer">
-      <p class="titulo-footer">© 2025 Nicolly</p>
-    </footer>
+      <footer class="footer">
+        <p>Para mais opções, visite:</p>
+        <a href="https://tiagoneves.com.br" target="_blank"
+          >tiagoneves.com.br</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
