@@ -29,4 +29,12 @@ window.document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#result").innerHTML = "";
       document.querySelector("#input-text").focus();
     });
+
+  window.document
+    .querySelector("#btnInverter")
+    .addEventListener("click", function () {
+      let inputText = document.querySelector("#input-text").value;
+      let invertido = inputText.split("").reverse().join("");
+      document.querySelector("#result").innerHTML = invertido;
+    });
 });
