@@ -16,7 +16,7 @@ body {
 .container-pai {
   background-color: #ffffff;
   padding: 16px;
-  width: 260px;
+  width: 300px;
   border-radius: 6px;
   text-align: center;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .btn {
-  width: 48%;
+  width: 35%;
   padding: 4px;
   margin: 2px;
   font-size: 12px;
