@@ -12,4 +12,13 @@ window.document.addEventListener("DOMContentLoaded", function () {
       let inputText = document.querySelector("#input-text").value;
       document.querySelector("#result").innerHTML = inputText.toLowerCase();
     });
+
+  window.document
+    .querySelector("#btnTitulo")
+    .addEventListener("click", function () {
+      let inputText = document.querySelector("#input-text").value;
+      let titulo =
+        inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+      document.querySelector("#result").innerHTML = titulo;
+    });
 });
