@@ -17,8 +17,11 @@ window.document.addEventListener("DOMContentLoaded", function () {
     .querySelector("#btnTitulo")
     .addEventListener("click", function () {
       let inputText = document.querySelector("#input-text").value;
-      let titulo =
-        inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+      inputText = inputText.toLowerCase();
+      let titulo = inputText.replace(/(^\s*\w|[.!?]\s*\w)/g, function (letra) {
+        return letra.toUpperCase();
+      });
+
       document.querySelector("#result").innerHTML = titulo;
     });
 
